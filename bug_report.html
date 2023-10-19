@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TweetBox Bug Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/bg_1.2.png') center/cover no-repeat;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 5px;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        form {
+            background: #ffffff38;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        select, input[type="text"], textarea {
+            width: 96%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f5f5f531;
+            color: black;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #f12828;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form id="bugReportForm" action="https://submit-form.com/PtmrT2dW">
+        <h2>Report a Bug in TweetBox</h2>
+        
+        <label for="userUid">Your UID:</label>
+        <input type="text" id="userUid" name="userUid" required>
+        
+        <label for="bugSection">Where find the bug?</label>
+        <select id="bugSection" name="bugSection">
+            <option value="home">Home</option>
+            <option value="slider">Slider</option>
+            <option value="community">Community</option>
+            <option value="settings">Settings</option>
+            <option value="call">Call</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="bugType">Bug Type:</label><br>
+        <select id="bugType" name="bugType">
+            <option value="functional">Functional</option>
+            <option value="visual">Visual</option>
+            <option value="performance">Performance</option>
+        </select>
+
+        <label for="bugDescription">Bug Description:</label><br>
+        <textarea id="bugDescription" name="bugDescription" rows="4" cols="50" required></textarea>
+
+        <button type="submit">Submit Report</button>
+    </form>
+</body>
+</html>
